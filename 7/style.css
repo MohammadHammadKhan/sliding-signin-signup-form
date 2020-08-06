@@ -88,7 +88,6 @@ overflow:hidden;
 border-radius: 20px;
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
             0 10px 10px rgba(0,0,0,0.22);
-            transition: transform 0.5s ease-in-out;
 }
 .form-container{
 position: absolute;
@@ -107,19 +106,20 @@ padding: 0 50px;
 height: 100%;
 }
 .sign-in-container{
-background: white;
+
     width: 50%;
    
     left: 0;
     z-index: 2;
+
 }
 .sign-up-container{
-    background: white;
+  
     width: 50%;
     left: 0;
     z-index: 1;
     opacity: 0;
-    transform: rotateY(180deg);
+    transform: translateX(-50%);
 }
 .overlay-container{
     color: white;
@@ -133,16 +133,14 @@ background: white;
     z-index: 100;
 }
 .overlay{
-    background: #FF416C;
+    bacbackground: #FF416C;
 	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
 	background: linear-gradient(to right, #FF4B2B, #FF416C);
     position: relative;
     height: 100%;
-    /* width: 200%; */
-    width: 100%;
+    width: 200%;
     top: 0;
-    /* left: -100%; */
-    left: 0%;
+    left: -100%;
     transform: translateX(0);
     transition: transform 0.5s ease-in-out;
 }
@@ -155,114 +153,46 @@ background: white;
     justify-content: center;
     text-align: center;
     height: 100%;
-    /* width: 50%; */
-    width: 100%;
+    width: 50%;
     padding: 0 40px;
     transform: translateX(0);
     transition: transform 0.5s ease-in-out;
 }
 .overlay-right{
-    background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
   right: 0; 
-  opacity: 1;
-  transition: z-index 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  z-index: 16;
-  /* transform: translateX(0); */
+  transform: translateX(0);
 }
 .overlay-left{
-    background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
-    opacity: 0;
-    z-index: 8;
-    transition: opacity 0.5s ease-in-out;
-    /* transition: z-index 15s ease-in-out; */
-    transform: rotateY(180deg);
-    /* transform: translateX(-20%); */
+    transform: translateX(-20%);
+    /* opacity: 0; */
 }
 
-.container.rightpanel-act .sign-in-container{
+.container.animate__animated .sign-in-container{
     z-index: 1;
-    opacity: 0;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
 /* transform: rotate(360deg); */
-transform: rotateY(180deg);
+transform: translateX(-50%);
 
 }
-.container.rightpanel-act .sign-up-container{
+.container.animate__animated .sign-up-container{
     z-index: 2;
     opacity: 1;
-    transform: rotateY(0deg);
-    transform: translateX(100%);
+    transform: translateX(0%);
     /* transform: rotate(360deg); */
 }
-.container.rightpanel-act .overlay-container{
-    transform: translateX(-100%);
-    /* transform: rotate(360deg); */
-}
-.container.rightpanel-act .overlay{
-    /* no   transform: translateX(50%); */
-    transform: rotateY(180deg);
-}
-.container.rightpanel-act .overlay-left{
-    /* transform: translateX(100%); */
-    z-index: 20;
-    opacity: 1;
-    
-    transform: rotateY(180deg);
-    /* animation: showindex 15s linear 1; */
-}
-/* @keyframes showindex{
-    0%,49.9%{
-        z-index: 15;
-    }
-    50%,100%{
-        z-index: 20;
-    }
-} */
-.container.rightpanel-act .overlay-right{
+.container.animate__animated .overlay-container{
     /* transform: translateX(-100%); */
-    /* z-index: 8; */
+    /* transform: rotate(360deg); */
+}
+.container.animate__animated .overlay{
+    /* transform: translateX(50%); */
+}
+.container.animate__animated .overlay-left{
+    transform: translateX(100%);
+}
+.container.animate__animated .overlay-right{
+    transform: translateX(-100%);
     opacity: 0;
-  
-    /* transform: rotateY(180deg); */
-     /* animation: showindex 15s linear 1; */
+    z-index: -2;
 }
-/* .container.rightpanel-act .container{
-    transform: rotatex(180deg);
-} */
 
-/* @keyframes showindex{
-    0%{
-        opacity: 0;   
-        z-index: 7;
-    }
-    5%{
-        opacity: 0;
-        z-index: 7;
-    }
-    10%,25%,49.9%{
-       opacity: 1;
-    }
-    50%,75%,100%{
-        z-index: 7;
-     opacity: 0;
-    }
-} */
-.flipcard{
-/* position: absolute;
-/* position: relative; */
-/* top: 0;
-left: 0;  */
-    /* perspective: 20px;  */
-}
-.flip-card-inner{
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.8s; */
-  /* transform-style: preserve-3d; */
-}
