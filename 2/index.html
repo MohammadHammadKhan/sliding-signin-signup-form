@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIgn in Sign up form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container signin-container">
+            <form action="">
+                <h1>Sign in</h1>
+                <div class="socialmedia">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>or use your account</p>
+                <input type="Email" placeholder="Email">
+                <input type="password" name="" placeholder="Password">
+                <a href="">Forgot your password?</a>
+                <button>SIGN IN</button>
+            </form>
+        </div>
+        <div class="form-container signup-container">
+            <form action="">
+                <h1>Create Account</h1>
+                <div class="socialmedia">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>or use your email for registration</p>
+                <input type="text" placeholder="Name">
+                <input type="Email" placeholder="Email">
+                <input type="password" name="" placeholder="Password">
+                <a href="">Forgot your password?</a>
+                <button>SIGN IN</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello Friends!</h1>
+                    <p>Enter you personal details and start your journey with us</p>
+                    <button class="ghost" id="signup-btn">SIGN UP</button>
+                </div>
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signin-btn">SIGN IN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('signup-btn').addEventListener('click',()=>
+        document.getElementById('container').classList.add('rightpanel-act'))
+        document.getElementById('signin-btn').addEventListener('click',()=>
+        document.getElementById('container').classList.remove('rightpanel-act'))
+    </script>
+</body>
+</html>
