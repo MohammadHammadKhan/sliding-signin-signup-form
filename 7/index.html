@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 <body>
+    <div class="animate bounce">
     <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">
@@ -55,11 +56,18 @@
             </div>
         </div>
     </div>
+</div>
     <script>
         document.getElementById('signUp').addEventListener('click',()=>
+        document.getElementById('container').classList.remove('animate__animated', 'animate__bounceIN', 'anaimate__slow'))
+        document.getElementById('signUp').addEventListener('click',()=>
         document.getElementById('container').classList.add('animate__animated', 'animate__bounce'))
+        
         document.getElementById('signIn').addEventListener('click',()=>
         document.getElementById('container').classList.remove('animate__animated', 'animate__bounce'))
+        document.getElementById('signIn').addEventListener('click',()=>
+        document.getElementById('container').classList.add('animate__animated', 'animate__bounceIn','animate__slow'))
+   
     </script>
    
 </body>

@@ -167,30 +167,30 @@ height: 100%;
     /* opacity: 0; */
 }
 
-.container.animate__animated .sign-in-container{
+.container.animate__animated.animate__bounce .sign-in-container{
     z-index: 1;
     /* transform: translateX(100%); */
 /* transform: rotate(360deg); */
 transform: translateX(-50%);
 
 }
-.container.animate__animated .sign-up-container{
+.container.animate__animated.animate__bounce .sign-up-container{
     z-index: 2;
     opacity: 1;
     transform: translateX(0%);
     /* transform: rotate(360deg); */
 }
-.container.animate__animated .overlay-container{
+.container.animate__animated.animate__bounce .overlay-container{
     /* transform: translateX(-100%); */
     /* transform: rotate(360deg); */
 }
-.container.animate__animated .overlay{
+.container.animate__animated.animate__bounce .overlay{
     /* transform: translateX(50%); */
 }
-.container.animate__animated .overlay-left{
+.container.animate__animated.animate__bounce .overlay-left{
     transform: translateX(100%);
 }
-.container.animate__animated .overlay-right{
+.container.animate__animated.animate__bounce .overlay-right{
     transform: translateX(-100%);
     opacity: 0;
     z-index: -2;
